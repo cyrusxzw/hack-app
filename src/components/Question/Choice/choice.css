@@ -1,0 +1,9 @@
+.answer-content {
+  font-size: 28px;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+
+.answer-content:hover {
+  color: rgba(0, 0, 0, 0.651);
+}

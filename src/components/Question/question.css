@@ -1,10 +1,32 @@
 .question-wrapper {
   display: none;
   text-align: center;
-  padding: 100px 30px;
   height: 100vh;
+}
+
+#question-1 {
+  background-color: rgb(215, 194, 148);
+}
+
+#question-2 {
+  background-color: rgb(235, 227, 218);
+}
+
+#question-3 {
+  background-color: rgb(216, 156, 141);
 }
 
 .question-wrapper.active {
   display: block;
+}
+
+.question-heading {
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+
+.choice-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 50px;
 }
