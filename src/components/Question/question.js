@@ -2,9 +2,9 @@ const Question = ({
   id
 }) => {
   return (
-    <div className="question-wrapper" id={id} style={{ marginTop: 500 }}>
+    <h1 className="question-wrapper" id={id} style={{ marginTop: 500 }}>
       1231123
-    </div>
+    </h1>
   )
 }
 
