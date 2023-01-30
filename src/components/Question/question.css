@@ -1,0 +1,10 @@
+.question-wrapper {
+  display: none;
+  text-align: center;
+  padding: 100px 30px;
+  height: 100vh;
+}
+
+.question-wrapper.active {
+  display: block;
+}
