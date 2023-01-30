@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import ScrollIntoView from "react-scroll-into-view";
+
+import "./App.css";
+import { Home, Question } from "./components";
+
+import { questionsFixture } from "./fixture";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ScrollIntoView selector="#question-1">
+        <Home id={"home"} />
+      </ScrollIntoView>
+      {questionsFixture.map((question) => {
+        return (
+          <ScrollIntoView selector={`#question-${question.id + 1}`}>
+            <Question id={`#question-${question.id}`} />
+          </ScrollIntoView>
+        );
+      })}
     </div>
   );
 }
