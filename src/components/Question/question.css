@@ -5,11 +5,11 @@
 }
 
 #question-1, #extra-question-3 {
-  background-color: rgb(215, 194, 148);
+  background-color: rgb(235, 227, 218);
 }
 
 #question-2, #extra-question-2 {
-  background-color: rgb(235, 227, 218);
+  background-color: rgb(215, 194, 148);
 }
 
 #question-3, #extra-question-1 {
@@ -21,6 +21,7 @@
 }
 
 .question-heading {
+  color: #252525;
   font-family: 'Oxygen', sans-serif;
   font-size: 40px;
   font-weight: 400;
@@ -33,4 +34,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 50px;
+  align-items: center;
+}
+
+.choice-wrapper.extra {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 100px;
 }

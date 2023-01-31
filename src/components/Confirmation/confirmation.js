@@ -1,3 +1,4 @@
+import cx from "classnames";
 import "./confirmation.css";
 import { Carousel, Heading, Button } from "@aesop-engineering/gel";
 import { ProductFixture } from "./product.fixtures";
@@ -17,7 +18,7 @@ const ProductRecommended = () => {
 const SkinTypeSummary = () => {
   const localStorageObj = { ...localStorage };
   const keys = Object.keys(localStorageObj);
-  console.log(localStorageObj);
+
   return (
     <div className="skin-type-summary">
       <Heading level="1" size="large">
@@ -26,7 +27,7 @@ const SkinTypeSummary = () => {
       <div className="summary-table">
         {keys.map((key) => {
           return (
-            <div className="summary-table-row">
+            <div className="summary-table-row" key={key}>
               <div className="summary-table-item">{key}</div>
               <div className="summary-table-item">{localStorageObj[key]}</div>
             </div>
@@ -52,8 +53,7 @@ const Subscribe = () => {
           onClick={() => {
             setIsLoading(true);
             setTimeout(() => setIsLoading(false), 1000);
-          }}
-        >
+          }}>
           Subscribe
         </Button>
       </div>
@@ -75,8 +75,7 @@ const Register = () => {
           onClick={() => {
             setIsLoading(true);
             setTimeout(() => setIsLoading(false), 1000);
-          }}
-        >
+          }}>
           Register
         </Button>
       </div>
@@ -85,8 +84,10 @@ const Register = () => {
 };
 
 const Confirmation = ({ id, isShow }) => {
+  const classSet = cx("confirmation", { active: isShow });
+
   return (
-    <div id={id} className={"confirmation"}>
+    <div id={id} className={classSet}>
       <SkinTypeSummary />
       <ProductRecommended />
       <Subscribe />

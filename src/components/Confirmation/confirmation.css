@@ -1,26 +1,31 @@
 .confirmation {
   background-color: #fffef2;
-  padding: 20px;
+  display: none;
+}
+
+.confirmation.active {
+  display: block;
 }
   
   .skin-type-summary {
     display: block;
     margin-left: 80px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
   }
       
   .skin-type-summary h1 {
     font-family: 'Oxygen', sans-serif;
     color: #252525;
-    font-size: 40px;
+    font-size: 30px;
+    padding-top: 120px;
   }
 
   .product-recommended {
-    margin-bottom: 150px;
+    margin-bottom: 70px;
   }
   
   .subscribe {
-    margin-bottom: 150px;
+    margin-bottom: 70px;
   }
   
   
@@ -28,9 +33,13 @@
     text-align: center;
   }
   
+  .register {
+    padding-bottom: 50px;
+  }
+
   .register h1 {
     text-align: center;
-    margin-bottom: 150px;
+    margin-bottom: 70px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -50,7 +59,7 @@
     display: flex;
     justify-content: center;
   }
-  
+
   .subscribe-input button{
     margin-left: 30px;
   }

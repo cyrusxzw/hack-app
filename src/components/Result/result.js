@@ -29,16 +29,21 @@ const Result = ({ id, isShow }) => {
   return (
     <div id={id} className={classSet}>
       <div className="typing">
-        Your skin type is: <span className="skin-type-word">Combination</span>
+        Your skin type & concern are: <br />
+        <span className="skin-type-word">Combination & Sensitive</span>
       </div>
       <div className={imgClassSet}>
         <img
           alt="Combination Skin"
-          src="https://shopify-blog.s3.us-east-2.amazonaws.com/1507870153_5.jpg"
+          src="https://picapica.id/wp-content/uploads/2020/04/combinationskinicon.png"
+        />
+        <img
+          alt="Sensitive Skin"
+          src="https://picapica.id/wp-content/uploads/2020/04/sensitifskinicon-768x768.png"
         />
       </div>
       <div>
-        <Button className={buttonClassSet}>Next step</Button>
+        <Button className={buttonClassSet}>Let's explore further into your Skin</Button>
       </div>
     </div>
   );
