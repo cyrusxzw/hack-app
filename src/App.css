@@ -1,3 +1,27 @@
+@font-face {
+  font-display: swap;
+  font-family: "Suisse Regular";
+  src: url("./fonts/Suisse/SuisseIntl-Medium-WebS.woff2") format("woff2"),
+    url("./fonts/Suisse/SuisseIntl-Regular-WebS.woff") format("woff"),
+    url("./fonts/Suisse/SuisseIntl-Regular-WebS.ttf") format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Suisse Medium";
+  src: url("./fonts/Suisse/SuisseIntl-Medium-WebS.woff2") format("woff2"),
+    url("./fonts/Suisse/SuisseIntl-Medium-WebS.woff") format("woff"),
+    url("./fonts/Suisse/SuisseIntl-Medium-WebS.ttf") format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Suisse SemiBold";
+  src: url("./fonts/Suisse/SuisseIntl-SemiBold-WebS.woff2") format("woff2"),
+    url("./fonts/Suisse/SuisseIntl-SemiBold-WebS.woff") format("woff"),
+    url("./fonts/Suisse/SuisseIntl-SemiBold-WebS.ttf") format("truetype");
+}
+
 .logo {
   position: fixed;
   z-index: 1;

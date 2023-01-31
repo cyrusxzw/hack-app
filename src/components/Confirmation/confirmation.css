@@ -11,10 +11,11 @@
     display: block;
     margin-left: 80px;
     margin-bottom: 100px;
+    font-family: "Suisse Regular";
   }
       
   .skin-type-summary h1 {
-    font-family: 'Oxygen', sans-serif;
+    font-family: "Suisse Regular";
     color: #252525;
     font-size: 30px;
     padding-top: 120px;

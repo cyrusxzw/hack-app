@@ -39,7 +39,7 @@
 }
 
 .typing {
-  font-family: 'Oxygen', sans-serif;
+  font-weight: 400;
   color: #252525;
   font-size: 40px;
 }
@@ -55,6 +55,7 @@
   overflow: hidden;
   font-weight: 700;
   border-right: 1px solid transparent;
+  font-family: "Suisse Regular";
 }
 
 .skin-type-img {
