@@ -2,6 +2,8 @@ import cx from "classnames";
 import { useState, useEffect } from "react";
 import { Button } from "@aesop-engineering/gel";
 import "./result.css";
+import CombImg from '../../img/Combo.PNG';
+import DehImg from '../../img/Dehydrated.PNG';
 
 const Result = ({ id, isShow }) => {
   const [showButton, setShowButton] = useState(false);
@@ -30,16 +32,16 @@ const Result = ({ id, isShow }) => {
     <div id={id} className={classSet}>
       <div className="typing">
         Your skin type & concern are: <br />
-        <span className="skin-type-word">Combination & Sensitive</span>
+        <span className="skin-type-word">Combination & Dehydrated</span>
       </div>
       <div className={imgClassSet}>
         <img
           alt="Combination Skin"
-          src="https://picapica.id/wp-content/uploads/2020/04/combinationskinicon.png"
+          src={CombImg}
         />
         <img
           alt="Sensitive Skin"
-          src="https://picapica.id/wp-content/uploads/2020/04/sensitifskinicon-768x768.png"
+          src={DehImg}
         />
       </div>
       <div>
