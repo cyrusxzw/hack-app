@@ -1,7 +1,7 @@
 import ScrollIntoView from "react-scroll-into-view";
 import { useState } from "react";
 import "./App.css";
-import { Home, Question, Result } from "./components";
+import { Home, Question, Result, Confirmation } from "./components";
 import { extraQuestionsFixture, questionsFixture } from "./fixture";
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
 
   const handleResultClick = () => {
     setIsShowExtraResult(true);
-  }
+  };
 
   return (
     <>
@@ -41,7 +41,8 @@ function App() {
           <ScrollIntoView
             key={question.id}
             selector={selector}
-            onClick={isLastQuestion && handleLastQuestionClick}>
+            onClick={isLastQuestion && handleLastQuestionClick}
+          >
             <Question
               id={`question-${question.id}`}
               isShow={isShow}
@@ -65,7 +66,8 @@ function App() {
           <ScrollIntoView
             key={question.id}
             selector={selector}
-            onClick={isLastQuestion && handleLastQuestionClick}>
+            onClick={isLastQuestion && handleLastQuestionClick}
+          >
             <Question
               id={`extra-question-${question.id}`}
               isShow={isShow && isShowExtraResult}
@@ -76,6 +78,7 @@ function App() {
           </ScrollIntoView>
         );
       })}
+      <Confirmation id={"confirmation"} />
     </>
   );
 }
