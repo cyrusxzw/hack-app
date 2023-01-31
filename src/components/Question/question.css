@@ -4,15 +4,15 @@
   height: 100vh;
 }
 
-#question-1 {
+#question-1, #extra-question-3 {
   background-color: rgb(215, 194, 148);
 }
 
-#question-2 {
+#question-2, #extra-question-2 {
   background-color: rgb(235, 227, 218);
 }
 
-#question-3 {
+#question-3, #extra-question-1 {
   background-color: rgb(216, 156, 141);
 }
 
@@ -21,8 +21,12 @@
 }
 
 .question-heading {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
   padding-top: 120px;
   padding-bottom: 100px;
+  margin: 0;
 }
 
 .choice-wrapper {

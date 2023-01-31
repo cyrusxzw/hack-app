@@ -1,8 +1,8 @@
 import "./choice.css";
 
-const Choice = ({ choice }) => {
+const Choice = ({ choice, question }) => {
   const handleClick = (content) => {
-    console.log(content);
+    localStorage.setItem(question, content);
   };
 
   return (

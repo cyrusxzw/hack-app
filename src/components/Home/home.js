@@ -3,7 +3,7 @@ import "./home.css";
 
 const Home = ({ id }) => (
   <div className="home" id={id}>
-    <Heading level="1" size="large" className="title">
+    <Heading level="1" size="xxlarge" className="title">
       Let us help you choose product
     </Heading>
     <Button className="start" theme="dark">
