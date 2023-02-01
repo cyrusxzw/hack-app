@@ -4,10 +4,10 @@ import "./home.css";
 const Home = ({ id }) => (
   <div className="home" id={id}>
     <Heading level="1" size="xxlarge" className="title">
-      Let us help you choose product
+      Let us help you start your personalised prescription
     </Heading>
     <Button className="start" theme="dark">
-      Start your journey
+      Begin the process
     </Button>
     <Image
       className="bottom-img"

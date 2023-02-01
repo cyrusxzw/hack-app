@@ -91,11 +91,11 @@ export const mutipleChoice = {
     },
     {
       id: 2,
-      content: "Spends extend period under the sun",
+      content: "Smoker",
     },
     {
       id: 3,
-      content: "Smoker",
+      content: "Spends extend period under the sun",
     },
     {
       id: 4,
@@ -120,6 +120,22 @@ export const mutipleChoice = {
     {
       id: 8,
       content: "Under pressure/stressed",
+    },
+    {
+      id: 9,
+      content: "Lack of sleep",
+    },
+    {
+      id: 10,
+      content: "Going through puberty",
+    },
+    {
+      id: 11,
+      content: "Hormonal imbalance",
+    },
+    {
+      id: 12,
+      content: "Consumes more that 9 teaspoons of sugar per day",
     },
   ],
 };

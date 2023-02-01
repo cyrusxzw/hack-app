@@ -43,7 +43,7 @@ const Subscribe = () => {
   return (
     <div className="subscribe">
       <Heading level="1" size="large">
-        Subscribe for more details
+        Subscribe to receive your skin summary
       </Heading>
       <div className="subscribe-input">
         <input />
@@ -66,7 +66,7 @@ const Register = () => {
   return (
     <div className="register">
       <Heading level="1" size="large">
-        Or register to get some complimentary sample
+        Or register to start your Aesop skin care journey
       </Heading>
       <div className="register-input">
         <Button
