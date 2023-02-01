@@ -4,7 +4,7 @@ const ProductFixture = {
   introduction: {
     cta: {},
     eyebrow: "",
-    heading: "Products recommended for you",
+    heading: "Prioritised products for you",
     description: "",
   },
   slides: [

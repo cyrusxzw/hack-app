@@ -23,6 +23,12 @@
 
   .product-recommended {
     margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-recommended button{
+    margin: 20px auto 50px;
   }
   
   .subscribe {

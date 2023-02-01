@@ -11,6 +11,9 @@ const ProductRecommended = () => {
         introduction={ProductFixture.introduction}
         slides={ProductFixture.slides}
       />
+      <Button isAlternate={true} onClick={() => {}}>
+        See more products
+      </Button>
     </div>
   );
 };
@@ -53,7 +56,8 @@ const Subscribe = () => {
           onClick={() => {
             setIsLoading(true);
             setTimeout(() => setIsLoading(false), 1000);
-          }}>
+          }}
+        >
           Subscribe
         </Button>
       </div>
@@ -75,7 +79,8 @@ const Register = () => {
           onClick={() => {
             setIsLoading(true);
             setTimeout(() => setIsLoading(false), 1000);
-          }}>
+          }}
+        >
           Register
         </Button>
       </div>
